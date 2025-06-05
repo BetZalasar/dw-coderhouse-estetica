@@ -1,0 +1,21 @@
+/*header*/
+.minav {
+  background-color: #f597bd; /* rosa clarito */
+  color: #880e4f; /* rosa oscuro */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px 20px 10px;
+}
+.minav .imglogo {
+  width: 400px;
+}
+.minav .nav-link {
+  color: beige;
+}
+.minav .navbar .nav-link.active, .minav .nav-link:hover, .minav .navbar-toggler-border-color {
+  color: #880e4f;
+}
+
+/*# sourceMappingURL=estilo.css.map */

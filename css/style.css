@@ -33,7 +33,6 @@ body {
 .navbar .nav-link.active,.nav-link:hover, .navbar-toggler-border-color{
   color: #880e4f;
 } 
-
 /*fin header*/
 
 
@@ -42,6 +41,7 @@ body {
 .banner { 
   padding: 90px 190px 300px 180px;  
   text-align: start;
+
   background-image: url(../img/banner1.JPG); 
   background-size:cover;
   background-position: center;
