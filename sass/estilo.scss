@@ -1,20 +1,11 @@
-/*header*/
-.minav{
-  background-color: #f597bd; /* rosa clarito */
-  color: #880e4f; /* rosa oscuro */
-  display: flex;
-  flex-direction: row; 
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px 20px 10px;
-    .imglogo{
-      width: 400px;}
-    .nav-link{ 
-     color:beige;
-        }
-    
-
-.navbar .nav-link.active,.nav-link:hover, .navbar-toggler-border-color{
-  color: #880e4f;
-}
-}
+@use"partials/headerbodyfooter";
+/*index*/
+@use"partials/index";
+/*servicios*/
+@use"partials/servicios";
+/*promociones*/
+@use"partials/promociones";
+/*nosotras*/
+@use"partials/nosotras";
+/*contacto*/
+@use"partials/contacto";

@@ -1,0 +1,149 @@
+.bannosotras
+{   padding: 275px;
+    background-image: url(../img/bannernosotras.jpg);
+    background-color: rgba(197, 197, 197, 0.512);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    h1{ 
+        color: #880e4f;
+        font-size: 2.5em;
+        text-shadow: 2px 5px 5px #3d3d3d;
+    }
+    h2{ 
+        font-size: 1.5em;
+        text-shadow: 1px 3px 3px #fffcff;
+    }
+
+}
+
+.historia
+{ 
+  background: rgba(255, 255, 255, 0.758);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-right: 10px;
+  display: grid;
+  grid-template-areas: 
+  "historia historia"
+  "texto1 img_fund";
+  grid-column: 1fr 1.5fr;
+  grid-row: 50px 500px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  padding: 50px;
+  margin: 50px;
+  gap: 50px;
+    .titulo_his
+    {   color: rgb(220, 20, 107);
+        font-family: "Poppins", sans-serif;
+        font-size: 3.5em;
+        text-shadow: 1px 4px 3px #ffffff, 2px 5px 3px #565656;
+        grid-area: historia;
+
+    }
+    .texto_his
+    {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: oblique;
+        font-size: 1.2em;
+        grid-area: texto1;
+        padding: 0px 20px 0px 20px;
+    }
+    .img_his
+    {   
+        grid-area: img_fund;
+        border-radius: 15px;
+        width: 500px;
+        
+    }
+}
+.equipo
+{
+   background-image: url(../img/fondo_profesionales.jpg);
+    background-color: rgba(197, 197, 197, 0.512);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    h2{ color:rgb(220, 20, 107) ;
+        font-family: "Poppins", sans-serif;
+        font-size: 3rem;
+        padding: 15px;
+        margin: 20px;
+
+    }  
+    .profesionales
+        {  
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: repeat(3,450px);
+            grid-template-areas: 
+            "marina lucia tatiana joaquin"
+            "martina lucas melisa sofia"
+            ". milton belen .";
+            margin: 20px;
+            padding: 20px;
+            row-gap: 30px;
+            img 
+            {
+                width: 250px;
+            }
+            #marina{
+                grid-area: marina;
+            }
+            #lucas{
+                grid-area: lucas;
+            }
+            #tatiana{
+                grid-area: tatiana;
+            }
+            #joaquin{
+                grid-area: joaquin;
+            }
+            #martina{
+                grid-area: martina;
+            }
+            #lucia{
+                grid-area: lucia;
+            }
+            #melisa{
+                grid-area: melisa;
+            }
+            #sofia{
+                grid-area: sofia;
+            }
+            #milton{
+                grid-area: milton;
+            }
+            #belen{
+                grid-area: belen;
+            }
+           p{
+                font-family: "Poppins", sans-serif;
+                position:sticky;
+                display: inline-block;
+                font-size: 1.5em;
+                z-index: 1;
+                padding: 10px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    //padding: 40px;
+                    background-color: #b7256e68;
+                    z-index: -1;
+                    filter: blur(15px);
+                }
+            }
+        }       
+}

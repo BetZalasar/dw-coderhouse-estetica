@@ -1,0 +1,198 @@
+/*------Home-------*/
+/*main*/
+.banner
+{ 
+    .textobanner
+   {    color: #ec8bad;
+        text-shadow: 1px 1px 8px rgb(50, 49, 49);
+        padding: 90px 190px 150px 180px;  
+        text-align: start;
+        z-index: 1;
+        h1
+        {
+            font-size: 3rem;
+        }
+        h2
+        {   color: #880e4f;
+            font-size: 5rem;
+            text-shadow: 1px 3px 3px #fffcffac;
+        }
+        p
+        {
+            font-size: 2rem;
+            text-shadow: 1px 1px 4px rgb(50, 49, 49);
+        } 
+    }
+    &::before
+    {   content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(../img/banner1.JPG);
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(5px);
+  
+    }
+}
+.bella
+{
+    background-color: bisque;
+    margin: 150px 100px 150px 150px;
+    border-radius: 10px;
+    
+    h3,h4
+    {
+        padding: 20px 0px 20px 0px;
+      
+    }
+
+    .porque
+    {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        div
+        {
+            margin: 20px;
+            text-align: start;
+        }
+    
+    }
+    .tarjetas
+    {   display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
+            div
+            {   background-color: bisque;
+                box-shadow: 0px 2px 2px 2px #9c828b;
+                padding: 20px;
+                margin: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    }
+}
+/*---home servicios--*/
+.boxlocales{
+    background-image: url(../img/backg_lis.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-color: hsla(0, 100%, 96%, 0.395);
+    background-blend-mode:overlay;
+.locales
+{  
+  display: grid;
+  grid-template-areas: 
+  "titulolocal titulolocal titulolocal"
+  "textolocal textolocal textolocal"
+  "tarjeta1 tarjeta2 tarjeta3"
+  "tarjetas4 tarjetas5 .";
+  justify-content: space-around;
+  align-items: center;
+  
+    .titulolocal
+    {   grid-area: titulolocal;
+        color: #880e4f;
+        font-size: 2rem;
+        text-shadow: 1px 3px 3px #fffcffac;
+        padding: 10px;
+    }
+    .textolocal
+    {   grid-area: textolocal;
+        font-size: 4rem;
+        color: #ec8bad;
+        text-shadow: 2px 2px 8px rgb(42, 41, 41), 3px 3px 10px #fffcffac;
+        padding: 50px;
+    }
+    div
+    {   background-color: pink;
+        border-radius: 10px;
+        padding: 80px;
+        margin: 30px;
+        width: 300px;
+        height: 300px;
+        box-shadow: 2px 2px 10px #eacfd9b1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.4s;
+            .tarjeta1
+            {   grid-area: tarjetas1;
+            }
+            .tarjeta2
+            {   grid-area: tarjetas2;
+            }
+            .tarjeta3
+            {   grid-area: tarjetas3;
+            }
+            .tarjetas4
+            {    grid-area: tarjetas4;
+            }
+            .tarjetas5
+            {   grid-area: tarjetas5;
+            }
+            button
+            {   background-color: #ec8bad; 
+                font-family:'Poppins', sans-serif;
+                font-size: 1em;
+                border-radius: 4px;
+                border-color:#ec8bad;
+                padding: 10px;
+                margin-bottom: 30px;
+                &:hover{
+                    background-color: #ea5086;
+                }
+            }
+         img 
+        {
+            width: 80px;
+            padding: 15px;
+        }
+        &:hover {
+            transform: translateY(-10px);
+        }    
+    }  
+}    
+}
+.texto_carrusel
+{   display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: start;
+    .texto_locales{
+    background-color: rgba(245, 245, 220, 0.799);
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px #2e2e2ebf;
+    h3
+    { 
+    color: #880e4f;
+    font-size: 2em;
+    align-items: center;
+    }
+    p
+    {
+    font-size: 1rem;
+    margin: 15px;
+    }
+    }
+.carrusel_fotos
+    {   border-radius: 10px;
+        width: 2500px;
+    }
+
+}   
+

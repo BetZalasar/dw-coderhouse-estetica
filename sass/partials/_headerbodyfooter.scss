@@ -1,0 +1,100 @@
+*
+{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body 
+{
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 100%, 96%);
+  color: #333;
+  line-height: 1.6;
+        .minav 
+        {
+                background-color: #f597bd; /* rosa clarito */
+                color: #880e4f; /* rosa oscuro */
+                display: flex;
+                flex-direction: row; 
+                justify-content: space-between;
+                align-items: center;
+                position: fixed;
+                z-index: 1000;
+                width: 100%;
+                padding:5px 40px 5px 40px;
+                .imglogo
+                {
+                        width: 150px;
+                }
+                .nav-link
+                { 
+                        color:beige;
+                }
+                .nav-link.active,.nav-link:hover, .navbar-toggler-border-color
+                {
+                        color: #880e4f;
+                }        
+        }
+        main
+        {
+                padding-top: 50px;
+        }
+/*---Footer---*/
+}
+.footer {
+  background-color: #f8bbd0;
+  color: #880e4f;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+  .footer-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .redes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; // Para responsive
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #880e4f;
+    transition: transform 0.3s, color 0.3s;
+
+        &:hover {
+      transform: translateY(-3px);
+      color:#cb4a8f;
+      text-shadow: 4px 4px 8px #fff7dc;
+    }
+    img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    transition: transform 0.3s;
+
+        &:hover {
+        transform: scale(1.1);
+        }
+  
+    }
+        span{
+        color: #880e4f;
+        text-decoration: none;
+    }
+    
+  }
+
+  .footerderechos {
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+}
+
