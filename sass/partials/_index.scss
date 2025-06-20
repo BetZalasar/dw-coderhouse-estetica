@@ -1,9 +1,24 @@
 /*------Home-------*/
 /*main*/
+/* 
+Titulo banner #f597bd
+sombra 1px 3px 3px #880E4F;
+texto banner #f5f5f5;
+sombra 1px 1px 8px rgb(50, 49, 49);
+Titulo #880e4f
+texto #ea5086;
+Fondo cards rgba(255, 228, 196, 0.636);
+Texto boton #f5f5f5;
+Fondo boton #ec8bad;
+hover #ea5086;
+Sombra oscura 1px 1px 8px rgb(50, 49, 49);
+Sombra clara 3px 3px 10px #fffcffac;
+*/
 .banner
 { 
     .textobanner
-   {    color: #ec8bad;
+   {    color: #F5F5F5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-shadow: 1px 1px 8px rgb(50, 49, 49);
         padding: 90px 190px 150px 180px;  
         text-align: start;
@@ -13,9 +28,9 @@
             font-size: 3rem;
         }
         h2
-        {   color: #880e4f;
+        {   color:  #f597bd;
             font-size: 5rem;
-            text-shadow: 1px 3px 3px #fffcffac;
+            text-shadow: 1px 3px 3px #880E4F;
         }
         p
         {
@@ -40,27 +55,35 @@
     }
 }
 .bella
-{
-    background-color: bisque;
+{   
+    background-color: rgba(255, 228, 196, 0.636);
     margin: 150px 100px 150px 150px;
     border-radius: 10px;
     
-    h3,h4
-    {
+    h3{ font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        font-size: 2.5rem;
+        color:#880e4f ;
         padding: 20px 0px 20px 0px;
-      
+
+    }
+
+    h4
+    {   font-size: 1.5rem;
+        color:#880e4f ;
+        padding: 20px 0px 20px 0px;
+
     }
 
     .porque
-    {
+    {   color: #ea5086;
         display: flex;
         flex-direction:row;
         justify-content: space-evenly;
         align-items: center;
-
+        padding-bottom: 0px;
         div
         {
-            margin: 20px;
+            margin: 10px;
             text-align: start;
         }
     
@@ -71,13 +94,19 @@
         justify-content: space-evenly;
         align-items: center;
             div
-            {   background-color: bisque;
-                box-shadow: 0px 2px 2px 2px #9c828b;
-                padding: 20px;
+            {   color: #ea5086;
+                width: 250px;
+                height: 200px;
+                background-color: rgba(255, 228, 196, 0.636);
+                box-shadow: 0px 2px 5px 2px #9c828b;
+                padding: 10px;
                 margin: 5px;
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 align-items: center;
+                img{
+                    width: 100px;
+                }
             }
     }
 }
@@ -111,12 +140,13 @@
     .textolocal
     {   grid-area: textolocal;
         font-size: 4rem;
-        color: #ec8bad;
+        color: #d20a89;
         text-shadow: 2px 2px 8px rgb(42, 41, 41), 3px 3px 10px #fffcffac;
         padding: 50px;
     }
     div
-    {   background-color: pink;
+    {   color: #d20a89;
+        background-color: pink;
         border-radius: 10px;
         padding: 80px;
         margin: 30px;
@@ -144,13 +174,15 @@
             {   grid-area: tarjetas5;
             }
             button
-            {   background-color: #ec8bad; 
+            {   color: #F5F5F5;
+                background-color: #ec8bad; 
                 font-family:'Poppins', sans-serif;
                 font-size: 1em;
                 border-radius: 4px;
                 border-color:#ec8bad;
                 padding: 10px;
                 margin-bottom: 30px;
+                box-shadow: 0px  2px 5px #880e4f ;
                 &:hover{
                     background-color: #ea5086;
                 }
@@ -174,17 +206,18 @@
     align-items: center;
     justify-items: start;
     .texto_locales{
-    background-color: rgba(245, 245, 220, 0.799);
+    background-color: rgba(255, 228, 196, 0.636);
     border-radius: 15px;
     box-shadow: 2px 2px 4px #2e2e2ebf;
     h3
     { 
-    color: #880e4f;
+    color: #D20A89;
     font-size: 2em;
     align-items: center;
     }
     p
     {
+    color:#ea5086 ;
     font-size: 1rem;
     margin: 15px;
     }

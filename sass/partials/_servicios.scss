@@ -1,24 +1,39 @@
+/* 
+Titulo banner #f597bd
+sombra 1px 3px 3px #880E4F;
+texto banner #F5F5F5;
+sombra 1px 1px 8px rgb(50, 49, 49);
+Titulo #880e4f
+texto #ea5086;
+Fondo cards rgba(255, 228, 196, 0.636);
+Texto boton #F5F5F5;
+Fondo boton #ec8bad;
+hover #ea5086;
+Sombra oscura 1px 1px 8px rgb(50, 49, 49);
+Sombra clara 3px 3px 10px #fffcffac;
+*/
+
 .banner_servicios
-{   
+{    font-family: Verdana, Geneva, Tahoma, sans-serif;
     h1{
-         color: #ec5b8e;
-            text-shadow: 1px 3px 3px #2e2d2e;
-            font-family: 'Poppins', sans-serif;
-            font-size: 5em;
+         color: #880e4f;
+            text-shadow: 1px 3px 2px #f597bd;
+            font-size: 3.5em;
     }
-    p{  color: #69053f;
-        text-shadow: 1px 3px 3px #fffcff;
-        font-family: 'Poppins', sans-serif;
-            font-size: 1.5em;
+    p{  
+        color: #f597bd;
+        padding: 20px 50px 0px 50px;
+        text-shadow:  1px 1px 3px rgb(48, 44, 44);
+            font-size: 2em;
     }
     background-image: url(../img/banner_servicios.jpg);
-    background-color: #bb76ab;
+    background-color:rgba(245, 245, 220, 0.266);
     background-blend-mode: overlay;
     background-attachment:fixed ;
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
-    padding: 200px 10px 300px 10px;
+    padding: 200px 10px 200px 10px;
 }
 .servicio{
   margin-bottom: 150px;
@@ -37,22 +52,36 @@
   text-align: start;
 
   div
-  {
+  {     
+        margin: 20px; 
+        background-color:rgba(255, 228, 196, 0.636) ;
+        padding-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0px  2px 10px  #fffcff;
+   
         h2{ padding-top: 20px;
-            color: #ec5b8e ;
-            font-size: 1.8em;  
+            margin: 15px;
+            color: #880e4f ;
+            font-size: 1.8em; 
+            font-weight: 600; 
         }
-        p{font-size: 1.1rem;}
+        p{  color: #ea5086;
+            font-size: 1.1rem;
+            margin: 15px;
+            padding-bottom: 10px;}
         a{
-            color: #69053f;
-            background-color: #efa6de;
-            border: #69053f;
-            border-radius: 10px;
+            color: #F5F5F5;
+            background-color: #ec8bad;
+            border: #ec8bad;
+            border-radius: 4px;
             padding: 10px;
+            margin: 15px;
             text-decoration: none;
+            box-shadow: 0px  2px 5px #880e4f ;
             &:hover{
-            color: #efa6de;
-            background-color: #722e56 ;
+            color: #F5F5F5;
+            background-color: #ea5086;
+            
         }
         
         }
@@ -60,11 +89,12 @@
         {
             width: 450px;
             border-radius: 5px;
+            box-shadow: 0px  3px 5px rgb(50, 49, 49);
         }
-        .block1
-        {
-            grid-area: block1;
-        }
+        .block1 {
+           grid-area: block1;
+       
+          }
         .block2
         {
             grid-area: block2;
@@ -103,6 +133,23 @@
 
 .comentgoogle{
   background-color:#ec8bad;
-  width: 1520px;
-  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  
+  h2{
+    color: #880e4f;
+  font-weight: 600;
+    margin-bottom: 50px;
+    
+    }
+
+  
+  .img-carru{
+   width: 500px;
+   box-shadow: 5px 5px 15px #880e4f, 8px 8px 50px white;
+    
+  }
 }

@@ -10,10 +10,20 @@
         text-align: center;
             h1 
             {
-                font-family: 'Poppins', sans-serif;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 2.5rem;
-                color: #880e4f;
-                text-shadow: 2px 5px 5px #3d3d3d;
+                color: #f5f5f5;
+                text-shadow: 1px 3px 3px #2e2d2e ,3px 3px 10px #fffcffac;
+            }
+            h2{
+              color: #d20a89;
+              font-size: 5rem;
+              font-weight: 600;
+              text-shadow: 1px 3px 3px #2e2d2e;
+            }
+            p{ color: #f5f5f5;;
+              font-size: 1.5rem;
+              text-shadow: 1px 3px 3px #2e2d2e;
             }
  
 }
@@ -21,9 +31,30 @@ section
 {
   padding: 50px;
   text-align: center;
+  
   .giftcard{
+    h3{
+    color: #d20a89;
+    font-family: 'poppins',sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    text-shadow: 0px 2px 8px #fffcffac;
+  }
+  .textgift{
+    color: #d20a89;
+    font-size: 1.5rem;
+  }
+  
+    #card{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 20px;
+      
+      
+    }
   .flip-card 
-  { 
+  { padding: 10px;
     display: flex;
     flex-wrap: wrap;
     background-color: transparent;
@@ -63,52 +94,64 @@ section
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border: 1px solid coral;
+  border: 1px solid rgb(233, 68, 156);
   border-radius: 1rem;
 }
 
 .flip-card-front {
   background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
-     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
-  color: coral;
+     rgb(255, 211, 195) 40%, rgba(233, 68, 156, 0.603) );
+  color: rgb(233, 68, 156) ;
 }
 
 .flip-card-back {
-  background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
-     bisque 40%, rgb(255, 185, 160) 78%);
+  background: linear-gradient(120deg, rgba(233, 68, 156, 0.603) 30%, rgb(233, 68, 156) 88%,
+     bisque 97%, rgb(255, 185, 160) 50%);
   color: white;
   transform: rotateY(180deg);
-}   }
-/*.giftcard
-    //{ img
-        {
-            width: 400px;
-        }
-    }*/
+
+}   
+
+}
 .promoamigue
-    {
-        margin: 100px;
+    {  margin: 100px;
+
+       h3{
+        margin: 15px;
+    color: #d20a89;
+    font-family: 'poppins',sans-serif;
+    font-size: 3.5em;
+    font-weight: 600;
+    text-shadow: 0px 2px 8px #fffcffac;
+    }
+    p{  margin: 10px;
+        color: #d20a89;
+    font-size: 1.5rem;
+    }
+        
         img
         {
             width: 400px;
             display:inline;
-            margin: 0px;
+            padding: 10px;
             
         }
        
     } 
 .boton{
             display: inline-block;
-            background-color: #d63384;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 2rem;
+            background-color: #ec8bad;
+            color: #f5f5f5;
+            padding: 15px 30px;
+            border-radius: 4px;
             text-decoration: none;
+            font-size: 1.2rem;
             margin-top: 1rem;
+            box-shadow: 0px  2px 5px #880e4f ;
             transition: background-color 0.3s;
             &:hover 
             {
-                background-color: #ad2669;
+                background-color: #ea5086;
             }
         }
 }
